@@ -3,33 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532150248B4A3500DC66BC /* AppDelegate.swift */; };
 		8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532152248B4A3500DC66BC /* SceneDelegate.swift */; };
-		8D532155248B4A3500DC66BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532154248B4A3500DC66BC /* ViewController.swift */; };
-		8D532158248B4A3500DC66BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D532156248B4A3500DC66BC /* Main.storyboard */; };
 		8D53215A248B4A3600DC66BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D532159248B4A3600DC66BC /* Assets.xcassets */; };
 		8D53215D248B4A3600DC66BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D53215B248B4A3600DC66BC /* LaunchScreen.storyboard */; };
 		8D532165248B558500DC66BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D532164248B558500DC66BC /* GoogleService-Info.plist */; };
+		8D5323F9248B5F9D00DC66BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5323F7248B5F9D00DC66BC /* Main.storyboard */; };
+		8D5323FB248B5FE200DC66BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5323FA248B5FE200DC66BC /* LoginViewController.swift */; };
 		A899351428D7138074303508 /* Pods_009_MyPhotoPostingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		379B9A3ED3ED419D959D9190 /* Pods-009-MyPhotoPostingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.debug.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_009_MyPhotoPostingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.config.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.config.xcconfig"; sourceTree = "<group>"; };
 		8734B70A4ED19ADCD709EA20 /* Pods-009-MyPhotoPostingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.release.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.release.xcconfig"; sourceTree = "<group>"; };
 		8D53214D248B4A3500DC66BC /* 009-MyPhotoPostingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "009-MyPhotoPostingApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D532150248B4A3500DC66BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D532152248B4A3500DC66BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D532154248B4A3500DC66BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D532157248B4A3500DC66BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D532159248B4A3600DC66BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D53215C248B4A3600DC66BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D53215E248B4A3600DC66BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D532164248B558500DC66BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D5323F8248B5F9D00DC66BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "009-MyPhotoPostingApp/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		8D5323FA248B5FE200DC66BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +68,8 @@
 			children = (
 				8D532150248B4A3500DC66BC /* AppDelegate.swift */,
 				8D532152248B4A3500DC66BC /* SceneDelegate.swift */,
-				8D532154248B4A3500DC66BC /* ViewController.swift */,
-				8D532156248B4A3500DC66BC /* Main.storyboard */,
+				8D5323F7248B5F9D00DC66BC /* Main.storyboard */,
+				8D5323FA248B5FE200DC66BC /* LoginViewController.swift */,
 				8D532159248B4A3600DC66BC /* Assets.xcassets */,
 				8D532164248B558500DC66BC /* GoogleService-Info.plist */,
 				8D53215B248B4A3600DC66BC /* LaunchScreen.storyboard */,
@@ -82,8 +83,8 @@
 			children = (
 				379B9A3ED3ED419D959D9190 /* Pods-009-MyPhotoPostingApp.debug.xcconfig */,
 				8734B70A4ED19ADCD709EA20 /* Pods-009-MyPhotoPostingApp.release.xcconfig */,
+				6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -158,7 +159,7 @@
 				8D53215D248B4A3600DC66BC /* LaunchScreen.storyboard in Resources */,
 				8D532165248B558500DC66BC /* GoogleService-Info.plist in Resources */,
 				8D53215A248B4A3600DC66BC /* Assets.xcassets in Resources */,
-				8D532158248B4A3500DC66BC /* Main.storyboard in Resources */,
+				8D5323F9248B5F9D00DC66BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D532155248B4A3500DC66BC /* ViewController.swift in Sources */,
+				8D5323FB248B5FE200DC66BC /* LoginViewController.swift in Sources */,
 				8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */,
 				8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */,
 			);
@@ -220,20 +221,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D532156248B4A3500DC66BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D532157248B4A3500DC66BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D53215B248B4A3600DC66BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8D53215C248B4A3600DC66BC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8D5323F7248B5F9D00DC66BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D5323F8248B5F9D00DC66BC /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,6 +361,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97L47TQF5Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleAppMeasurement/Frameworks",
+				);
 				INFOPLIST_FILE = "009-MyPhotoPostingApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,6 +385,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97L47TQF5Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleAppMeasurement/Frameworks",
+				);
 				INFOPLIST_FILE = "009-MyPhotoPostingApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -391,6 +402,84 @@
 			};
 			name = Release;
 		};
+		8D5323FC248B66A400DC66BC /* Config */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Config;
+		};
+		8D5323FD248B66A400DC66BC /* Config */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97L47TQF5Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Pods/GoogleAppMeasurement/Frameworks",
+				);
+				INFOPLIST_FILE = "009-MyPhotoPostingApp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Takatoshi-Miura.-09-MyPhotoPostingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Config;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +488,7 @@
 			buildConfigurations = (
 				8D53215F248B4A3600DC66BC /* Debug */,
 				8D532160248B4A3600DC66BC /* Release */,
+				8D5323FC248B66A400DC66BC /* Config */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -408,6 +498,7 @@
 			buildConfigurations = (
 				8D532162248B4A3600DC66BC /* Debug */,
 				8D532163248B4A3600DC66BC /* Release */,
+				8D5323FD248B66A400DC66BC /* Config */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

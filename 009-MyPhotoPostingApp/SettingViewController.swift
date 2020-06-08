@@ -43,7 +43,6 @@ class SettingViewController: UIViewController {
         do {
             try firebaseAuth.signOut()
             SVProgressHUD.showSuccess(withStatus: "ログアウトしました。")
-            
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
             SVProgressHUD.showError(withStatus: "ログアウトに失敗しました。")

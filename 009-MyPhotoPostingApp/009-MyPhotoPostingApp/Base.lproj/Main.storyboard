@@ -63,16 +63,18 @@
                         <outlet property="textFieldAccountName" destination="Q0I-8d-3vN" id="qIZ-XF-E3L"/>
                         <outlet property="textFieldMailAddress" destination="ebG-cp-Ep1" id="SqY-sT-e1J"/>
                         <outlet property="textFieldPassword" destination="gQk-2Y-B7d" id="B3v-de-mDC"/>
+                        <segue destination="Dvo-32-97r" kind="show" identifier="goTabBarController" id="evS-Zk-2GW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-794.20289855072474" y="-139.28571428571428"/>
+            <point key="canvasLocation" x="806" y="-901"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="V5L-gt-WXp">
             <objects>
-                <tabBarController id="Dvo-32-97r" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="Dvo-32-97r" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FLa-4o-Adg"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hF9-4N-KNf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -91,9 +93,9 @@
         <!--ホーム-->
         <scene sceneID="aMx-da-NlW">
             <objects>
-                <tableViewController id="irf-S1-Dkz" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="irf-S1-Dkz" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZB7-if-MPr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <connections>
@@ -110,9 +112,9 @@
         <!--投稿-->
         <scene sceneID="wFN-c0-tDx">
             <objects>
-                <viewController id="IeX-X8-g54" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="IeX-X8-g54" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iMr-w3-Rd9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="0ug-rJ-Alz"/>
@@ -141,10 +143,29 @@
         <!--設定-->
         <scene sceneID="zt5-wV-mTS">
             <objects>
-                <viewController id="oab-UC-9dU" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="oab-UC-9dU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jD8-BX-OAK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pg-37-15I">
+                                <rect key="frame" x="50" y="135" width="315" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baM-uL-Qib">
+                                <rect key="frame" x="50" y="188" width="315" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.95857137439999995" green="0.67352682350000004" blue="0.47054415939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="ログアウト">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUz-8F-gCI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="fed-39-tiv"/>
                     </view>

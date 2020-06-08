@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D502657248CDC0F001D4B6C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D502654248CDC0E001D4B6C /* SVProgressHUD.bundle */; };
+		8D502658248CDC0F001D4B6C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D502655248CDC0F001D4B6C /* SVProgressHUD.m */; };
+		8D50265A248CDC46001D4B6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D502659248CDC46001D4B6C /* QuartzCore.framework */; };
 		8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532150248B4A3500DC66BC /* AppDelegate.swift */; };
 		8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D532152248B4A3500DC66BC /* SceneDelegate.swift */; };
 		8D53215A248B4A3600DC66BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D532159248B4A3600DC66BC /* Assets.xcassets */; };
@@ -22,6 +25,11 @@
 		467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_009_MyPhotoPostingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.config.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.config.xcconfig"; sourceTree = "<group>"; };
 		8734B70A4ED19ADCD709EA20 /* Pods-009-MyPhotoPostingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.release.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.release.xcconfig"; sourceTree = "<group>"; };
+		8D502653248CDC0E001D4B6C /* 009-MyPhotoPostingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "009-MyPhotoPostingApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		8D502654248CDC0E001D4B6C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "SVProgressHUD-master/SVProgressHUD/SVProgressHUD.bundle"; sourceTree = SOURCE_ROOT; };
+		8D502655248CDC0F001D4B6C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = "SVProgressHUD-master/SVProgressHUD/SVProgressHUD.m"; sourceTree = SOURCE_ROOT; };
+		8D502656248CDC0F001D4B6C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = "SVProgressHUD-master/SVProgressHUD/SVProgressHUD.h"; sourceTree = SOURCE_ROOT; };
+		8D502659248CDC46001D4B6C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8D53214D248B4A3500DC66BC /* 009-MyPhotoPostingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "009-MyPhotoPostingApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D532150248B4A3500DC66BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D532152248B4A3500DC66BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D50265A248CDC46001D4B6C /* QuartzCore.framework in Frameworks */,
 				A899351428D7138074303508 /* Pods_009_MyPhotoPostingApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +83,10 @@
 				8D532164248B558500DC66BC /* GoogleService-Info.plist */,
 				8D53215B248B4A3600DC66BC /* LaunchScreen.storyboard */,
 				8D53215E248B4A3600DC66BC /* Info.plist */,
+				8D502654248CDC0E001D4B6C /* SVProgressHUD.bundle */,
+				8D502656248CDC0F001D4B6C /* SVProgressHUD.h */,
+				8D502655248CDC0F001D4B6C /* SVProgressHUD.m */,
+				8D502653248CDC0E001D4B6C /* 009-MyPhotoPostingApp-Bridging-Header.h */,
 			);
 			path = "009-MyPhotoPostingApp";
 			sourceTree = "<group>";
@@ -91,6 +104,7 @@
 		EB55EFDA110B1581F4AD4DA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8D502659248CDC46001D4B6C /* QuartzCore.framework */,
 				467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */,
 			);
 			name = Frameworks;
@@ -130,6 +144,7 @@
 				TargetAttributes = {
 					8D53214C248B4A3500DC66BC = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 				};
 			};
@@ -156,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D502657248CDC0F001D4B6C /* SVProgressHUD.bundle in Resources */,
 				8D53215D248B4A3600DC66BC /* LaunchScreen.storyboard in Resources */,
 				8D532165248B558500DC66BC /* GoogleService-Info.plist in Resources */,
 				8D53215A248B4A3600DC66BC /* Assets.xcassets in Resources */,
@@ -213,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D5323FB248B5FE200DC66BC /* LoginViewController.swift in Sources */,
+				8D502658248CDC0F001D4B6C /* SVProgressHUD.m in Sources */,
 				8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */,
 				8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */,
 			);
@@ -359,6 +376,7 @@
 			baseConfigurationReference = 379B9A3ED3ED419D959D9190 /* Pods-009-MyPhotoPostingApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97L47TQF5Z;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -373,6 +391,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Takatoshi-Miura.-09-MyPhotoPostingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "009-MyPhotoPostingApp/009-MyPhotoPostingApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -383,6 +403,7 @@
 			baseConfigurationReference = 8734B70A4ED19ADCD709EA20 /* Pods-009-MyPhotoPostingApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97L47TQF5Z;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -397,6 +418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Takatoshi-Miura.-09-MyPhotoPostingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "009-MyPhotoPostingApp/009-MyPhotoPostingApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +483,7 @@
 			baseConfigurationReference = 6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97L47TQF5Z;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -475,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Takatoshi-Miura.-09-MyPhotoPostingApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "009-MyPhotoPostingApp/009-MyPhotoPostingApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -59,10 +59,13 @@ class LoginViewController: UIViewController {
                     SVProgressHUD.showError(withStatus: "ログインに失敗しました。入力を確認して下さい。")
                     return
                 }
-                SVProgressHUD.showError(withStatus: "ログインしました。")
+                SVProgressHUD.showSuccess(withStatus: "ログインしました。")
 
                 // タブ画面に遷移
-                self.performSegue(withIdentifier: "goTabBarController", sender: nil)
+                // メッセージが隠れてしまうため、遅延処理を行う
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
+                    self.performSegue(withIdentifier: "goTabBarController", sender: nil)
+                }
                 
             }
         }
@@ -88,13 +91,23 @@ class LoginViewController: UIViewController {
                     SVProgressHUD.showError(withStatus: "アカウントの作成に失敗しました。")
                     return
                 }
-                SVProgressHUD.showError(withStatus: "アカウントを作成しました。")
+                SVProgressHUD.showSuccess(withStatus: "アカウントを作成しました。")
                 
                 // タブ画面に遷移
-                self.performSegue(withIdentifier: "goTabBarController", sender: nil)
-                
+                // メッセージが隠れてしまうため、遅延処理を行う
+                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.0) {
+                    self.performSegue(withIdentifier: "goTabBarController", sender: nil)
+                }
             }
         }
+    }
+    
+    // ログイン画面に戻ってくるときに呼び出される処理
+    @IBAction func goToLogin(_segue:UIStoryboardSegue){
+        // テキストフィールドをクリア
+        textFieldMailAddress.text = ""
+        textFieldPassword.text    = ""
+        textFieldAccountName.text = ""
     }
     
 }

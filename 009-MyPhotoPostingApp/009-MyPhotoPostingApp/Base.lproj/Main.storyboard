@@ -25,7 +25,7 @@
                                 <rect key="frame" x="48" y="170" width="315" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="アカウント作成時は表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q0I-8d-3vN">
                                 <rect key="frame" x="48" y="212" width="315" height="34"/>
@@ -143,35 +143,68 @@
         <!--設定-->
         <scene sceneID="zt5-wV-mTS">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="oab-UC-9dU" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="oab-UC-9dU" customClass="SettingViewController" customModule="_09_MyPhotoPostingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jD8-BX-OAK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5pg-37-15I">
-                                <rect key="frame" x="50" y="135" width="315" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="アカウント名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mx7-EL-O3j">
+                                <rect key="frame" x="50" y="118" width="315" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="0xe-m9-qX9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baM-uL-Qib">
-                                <rect key="frame" x="50" y="188" width="315" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJE-Y9-jxk">
+                                <rect key="frame" x="50" y="160" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.95857137439999995" green="0.67352682350000004" blue="0.47054415939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hKZ-oP-QgY"/>
+                                </constraints>
+                                <state key="normal" title="表示名変更">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeAccountNameButton:" destination="oab-UC-9dU" eventType="touchUpInside" id="8c5-8C-bPM"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPP-XN-o26"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eba-dr-uTv">
+                                <rect key="frame" x="50" y="228" width="315" height="50"/>
                                 <color key="backgroundColor" red="0.95857137439999995" green="0.67352682350000004" blue="0.47054415939999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="ログアウト">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUz-8F-gCI"/>
+                                    <action selector="createAccountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfC-4W-Skf"/>
+                                    <action selector="logoutButton:" destination="oab-UC-9dU" eventType="touchUpInside" id="ULa-DV-k6S"/>
+                                    <segue destination="PYq-nW-FXU" kind="unwind" unwindAction="goToLoginWith_segue:" id="FjW-Q0-Qjd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VJE-Y9-jxk" firstAttribute="top" secondItem="Mx7-EL-O3j" secondAttribute="bottom" constant="8" id="10A-Fb-qwa"/>
+                            <constraint firstItem="Mx7-EL-O3j" firstAttribute="centerX" secondItem="jD8-BX-OAK" secondAttribute="centerX" id="2aZ-KY-6Xk"/>
+                            <constraint firstItem="VJE-Y9-jxk" firstAttribute="trailing" secondItem="Eba-dr-uTv" secondAttribute="trailing" id="2lC-BC-6VM"/>
+                            <constraint firstItem="Mx7-EL-O3j" firstAttribute="trailing" secondItem="VJE-Y9-jxk" secondAttribute="trailing" id="75o-qp-37d"/>
+                            <constraint firstItem="Mx7-EL-O3j" firstAttribute="leading" secondItem="fed-39-tiv" secondAttribute="leading" constant="50" id="Aej-wf-xsy"/>
+                            <constraint firstItem="fed-39-tiv" firstAttribute="bottom" secondItem="Eba-dr-uTv" secondAttribute="bottom" constant="481" id="GhW-nB-WRF"/>
+                            <constraint firstItem="Mx7-EL-O3j" firstAttribute="leading" secondItem="VJE-Y9-jxk" secondAttribute="leading" id="YkN-0R-rfF"/>
+                            <constraint firstItem="VJE-Y9-jxk" firstAttribute="leading" secondItem="Eba-dr-uTv" secondAttribute="leading" id="dSy-Wu-9oT"/>
+                            <constraint firstItem="Eba-dr-uTv" firstAttribute="top" secondItem="VJE-Y9-jxk" secondAttribute="bottom" constant="18" id="nhl-y2-tGR"/>
+                            <constraint firstItem="Mx7-EL-O3j" firstAttribute="top" secondItem="fed-39-tiv" secondAttribute="top" constant="118" id="rgr-C5-9Cb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fed-39-tiv"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="設定" image="gear" catalog="system" id="UYh-HS-D21"/>
+                    <connections>
+                        <outlet property="textFieldAccountName" destination="Mx7-EL-O3j" id="oUg-vh-AnF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L9O-P3-Dco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PYq-nW-FXU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1845" y="635"/>
         </scene>

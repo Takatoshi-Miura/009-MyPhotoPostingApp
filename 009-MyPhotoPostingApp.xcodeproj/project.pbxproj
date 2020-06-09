@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D1098B9248FB3D10018C6D5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1098B7248FB3D10018C6D5 /* PostTableViewCell.swift */; };
+		8D1098BA248FB3D10018C6D5 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1098B8248FB3D10018C6D5 /* PostTableViewCell.xib */; };
 		8D502657248CDC0F001D4B6C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8D502654248CDC0E001D4B6C /* SVProgressHUD.bundle */; };
 		8D502658248CDC0F001D4B6C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D502655248CDC0F001D4B6C /* SVProgressHUD.m */; };
 		8D50265A248CDC46001D4B6C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D502659248CDC46001D4B6C /* QuartzCore.framework */; };
@@ -29,6 +31,8 @@
 		467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_009_MyPhotoPostingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3C2A4A74BF1CD046CAD619 /* Pods-009-MyPhotoPostingApp.config.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.config.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.config.xcconfig"; sourceTree = "<group>"; };
 		8734B70A4ED19ADCD709EA20 /* Pods-009-MyPhotoPostingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-009-MyPhotoPostingApp.release.xcconfig"; path = "Target Support Files/Pods-009-MyPhotoPostingApp/Pods-009-MyPhotoPostingApp.release.xcconfig"; sourceTree = "<group>"; };
+		8D1098B7248FB3D10018C6D5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		8D1098B8248FB3D10018C6D5 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		8D502653248CDC0E001D4B6C /* 009-MyPhotoPostingApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "009-MyPhotoPostingApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		8D502654248CDC0E001D4B6C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = "SVProgressHUD-master/SVProgressHUD/SVProgressHUD.bundle"; sourceTree = SOURCE_ROOT; };
 		8D502655248CDC0F001D4B6C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = "SVProgressHUD-master/SVProgressHUD/SVProgressHUD.m"; sourceTree = SOURCE_ROOT; };
@@ -90,6 +94,8 @@
 				8D90622C248E280E00362FC6 /* ImageSelectViewController.swift */,
 				8D90622E248E3F1D00362FC6 /* PostViewController.swift */,
 				8D906230248E5D2300362FC6 /* PostData.swift */,
+				8D1098B7248FB3D10018C6D5 /* PostTableViewCell.swift */,
+				8D1098B8248FB3D10018C6D5 /* PostTableViewCell.xib */,
 				8D502662248E0EC1001D4B6C /* SettingViewController.swift */,
 				8D532159248B4A3600DC66BC /* Assets.xcassets */,
 				8D532164248B558500DC66BC /* GoogleService-Info.plist */,
@@ -186,6 +192,7 @@
 				8D502657248CDC0F001D4B6C /* SVProgressHUD.bundle in Resources */,
 				8D53215D248B4A3600DC66BC /* LaunchScreen.storyboard in Resources */,
 				8D532165248B558500DC66BC /* GoogleService-Info.plist in Resources */,
+				8D1098BA248FB3D10018C6D5 /* PostTableViewCell.xib in Resources */,
 				8D53215A248B4A3600DC66BC /* Assets.xcassets in Resources */,
 				8D5323F9248B5F9D00DC66BC /* Main.storyboard in Resources */,
 			);
@@ -248,6 +255,7 @@
 				8D502658248CDC0F001D4B6C /* SVProgressHUD.m in Sources */,
 				8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */,
 				8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */,
+				8D1098B9248FB3D10018C6D5 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

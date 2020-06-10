@@ -33,7 +33,6 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
     
     // 「ライブラリ」ボタンの処理
     @IBAction func handleLibraryButton(_ sender: Any) {
-        // TODO:アクセス許可を求めるダイアログを表示
         
         // ライブラリが利用可能か判定
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
@@ -47,13 +46,13 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
             print("ライブラリは利用できません")
             SVProgressHUD.showError(withStatus: "ライブラリにアクセスできません。アクセスを許可して下さい。")
         }
+        
     }
     
     
     // 「カメラ」ボタンの処理
     @IBAction func handleCamaraButton(_ sender: Any) {
-        // TODO:アクセス許可を求めるダイアログを表示
-        
+
         // カメラが利用可能か判定
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             print("カメラは利用可能です")
@@ -66,6 +65,7 @@ class ImageSelectViewController: UIViewController, UIImagePickerControllerDelega
             print("カメラは利用できません")
             SVProgressHUD.showError(withStatus: "カメラを起動できません。カメラを許可して下さい。")
         }
+        
     }
     
     

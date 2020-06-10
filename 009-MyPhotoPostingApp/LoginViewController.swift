@@ -91,6 +91,13 @@ class LoginViewController: UIViewController {
                     SVProgressHUD.showError(withStatus: "アカウントの作成に失敗しました。")
                     return
                 }
+                
+                // アカウント名の登録
+                let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                changeRequest?.displayName = accountName
+                changeRequest?.commitChanges { (error) in
+                }
+                
                 SVProgressHUD.showSuccess(withStatus: "アカウントを作成しました。")
                 
                 // タブ画面に遷移

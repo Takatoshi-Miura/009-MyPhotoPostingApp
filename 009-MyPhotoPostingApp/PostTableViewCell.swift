@@ -12,19 +12,33 @@ class PostTableViewCell: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var postImage: UIImageView!  // 投稿画像
+    @IBOutlet weak var postComment: UILabel!    // 投稿コメント
+    @IBOutlet weak var postTime: UILabel!       // 投稿日時
+    
+    
+    // 「返信」ボタンの処理
+    @IBAction func replyCommentButton(_ sender: Any) {
     }
-    */
+    
+    
+    // セルに投稿内容を表示するメソッド
+    func printPosting(_ postImage:UIImage,_ postComment:String) {
+        
+        // 画像とコメントを表示
+        self.postImage.image  = postImage
+        self.postComment.text = postComment
+        
+        // 現在時刻を取得して表示
+        let now = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "ja_JP")
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        self.postTime.text  = dateFormatter.string(from: now)
+        
+    }
+    
 
 }

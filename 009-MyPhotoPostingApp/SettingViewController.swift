@@ -26,13 +26,23 @@ class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // テキストフィールドにアカウント名を表示
+        let user = Auth.auth().currentUser
+        textFieldAccountName.text = user?.displayName
     }
     
     // テキストフィールド
     @IBOutlet weak var textFieldAccountName: UITextField!
     
-    // 「表示名変更」ボタンの処理
+    // 「アカウント名変更」ボタンの処理
     @IBAction func changeAccountNameButton(_ sender: Any) {
+        // アカウント名の変更
+        let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+        changeRequest?.displayName = textFieldAccountName.text
+        changeRequest?.commitChanges { (error) in
+        }
+        SVProgressHUD.showSuccess(withStatus: "アカウント名を変更しました。")
     }
     
     

@@ -11,6 +11,8 @@
 //
 //  ＜機能＞
 //  投稿機能
+//      選択した画像とコメントをホーム画面に渡し、以下の情報をCloud Firestoreに保存する。
+//      投稿画像、投稿コメント、
 //
 //  投稿キャンセル機能
 //      選択した画像、記入したコメントを消去し、投稿画面に戻る。
@@ -33,6 +35,13 @@ class PostViewController: UIViewController {
     
     // 「投稿」ボタンの処理
     @IBAction func postButton(_ sender: Any) {
+        
+        // 投稿内容を格納する
+        let postComment:String = postTextField.text!
+        let postData = PostData((selectedImage ?? UIImage(systemName: "questionmark"))!,postComment )
+        
+        // Cloud Firestoreに投稿データを保存する
+        postData.savePostData()
     }
     
     // 「キャンセル」ボタンの処理

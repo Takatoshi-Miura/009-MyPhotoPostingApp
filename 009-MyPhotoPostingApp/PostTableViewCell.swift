@@ -8,11 +8,8 @@
 
 import UIKit
 
-class PostTableViewCell: UIViewController {
+class PostTableViewCell: UITableViewCell {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBOutlet weak var postImage: UIImageView!  // 投稿画像
     @IBOutlet weak var postComment: UILabel!    // 投稿コメント
@@ -25,7 +22,7 @@ class PostTableViewCell: UIViewController {
     
     
     // セルに投稿内容を表示するメソッド
-    func printPosting(_ postImage:UIImage,_ postComment:String) {
+    func printPostData(_ postImage:UIImage,_ postComment:String) {
         
         // 画像とコメントを表示
         self.postImage.image  = postImage

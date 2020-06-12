@@ -44,13 +44,25 @@ class PostViewController: UIViewController {
         postData.savePostData()
     }
     
+    
     // 「キャンセル」ボタンの処理
     @IBAction func canselButton(_ sender: Any) {
         // 投稿画面に遷移
     }
     
     
-    
+    // 画面遷移時の処理
+    override func prepare(for segue:UIStoryboardSegue,sender:Any?){
+        // 次の画面を取り出す
+        let nextViewController = segue.destination as! HomeViewController
+        
+        // セルを追加する
+        let cell = PostTableViewCell()
+        cell.printPostData(selectedImage ?? UIImage(systemName: "questionmark")!, postTextField.text!)
+        nextViewController.postDataArray.insert(cell,at:0)
+        nextViewController.tableView.insertRows(at: [IndexPath(row:0,section:0)],with: UITableView.RowAnimation.right)
+        
+    }
 
 
 }

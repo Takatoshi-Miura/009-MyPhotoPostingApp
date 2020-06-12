@@ -23,6 +23,7 @@
 		8D90622D248E280E00362FC6 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90622C248E280E00362FC6 /* ImageSelectViewController.swift */; };
 		8D90622F248E3F1D00362FC6 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90622E248E3F1D00362FC6 /* PostViewController.swift */; };
 		8D906231248E5D2300362FC6 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D906230248E5D2300362FC6 /* PostData.swift */; };
+		8DB85931249369AD0019A5A7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB85930249369AD0019A5A7 /* HomeViewController.swift */; };
 		A899351428D7138074303508 /* Pods_009_MyPhotoPostingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467C68D2B13B5A87A78910AA /* Pods_009_MyPhotoPostingApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		8D90622C248E280E00362FC6 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
 		8D90622E248E3F1D00362FC6 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		8D906230248E5D2300362FC6 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		8DB85930249369AD0019A5A7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +94,11 @@
 				8D5323F7248B5F9D00DC66BC /* Main.storyboard */,
 				8D5323FA248B5FE200DC66BC /* LoginViewController.swift */,
 				8D90622C248E280E00362FC6 /* ImageSelectViewController.swift */,
-				8D90622E248E3F1D00362FC6 /* PostViewController.swift */,
 				8D906230248E5D2300362FC6 /* PostData.swift */,
 				8D1098B7248FB3D10018C6D5 /* PostTableViewCell.swift */,
 				8D1098B8248FB3D10018C6D5 /* PostTableViewCell.xib */,
+				8D90622E248E3F1D00362FC6 /* PostViewController.swift */,
+				8DB85930249369AD0019A5A7 /* HomeViewController.swift */,
 				8D502662248E0EC1001D4B6C /* SettingViewController.swift */,
 				8D532159248B4A3600DC66BC /* Assets.xcassets */,
 				8D532164248B558500DC66BC /* GoogleService-Info.plist */,
@@ -252,6 +255,7 @@
 				8D502663248E0EC1001D4B6C /* SettingViewController.swift in Sources */,
 				8D90622F248E3F1D00362FC6 /* PostViewController.swift in Sources */,
 				8D5323FB248B5FE200DC66BC /* LoginViewController.swift in Sources */,
+				8DB85931249369AD0019A5A7 /* HomeViewController.swift in Sources */,
 				8D502658248CDC0F001D4B6C /* SVProgressHUD.m in Sources */,
 				8D532151248B4A3500DC66BC /* AppDelegate.swift in Sources */,
 				8D532153248B4A3500DC66BC /* SceneDelegate.swift in Sources */,

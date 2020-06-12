@@ -93,9 +93,9 @@
         <!--ホーム-->
         <scene sceneID="aMx-da-NlW">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="irf-S1-Dkz" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="irf-S1-Dkz" customClass="HomeViewController" customModule="_09_MyPhotoPostingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZB7-if-MPr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <connections>
@@ -104,6 +104,10 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" id="1OD-BE-4zb"/>
+                    <navigationItem key="navigationItem" id="IqN-Sw-zik"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZB7-if-MPr" id="MX8-v4-yqz"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j2c-OX-4wv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -194,6 +198,7 @@
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7J0-5i-K93"/>
                                     <action selector="postButton:" destination="QwD-fA-PRs" eventType="touchUpInside" id="NdA-Zz-RcK"/>
+                                    <segue destination="irf-S1-Dkz" kind="show" id="3TQ-F9-ySr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k7-YZ-Bdf">
@@ -278,6 +283,9 @@
             <point key="canvasLocation" x="1845" y="635"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3TQ-F9-ySr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="gear" catalog="system" width="128" height="119"/>
